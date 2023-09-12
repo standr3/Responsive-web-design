@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>survey-form.freecodecamp.rocks</title>
+  </head>
+  <body>
+    <main>
+      <h1>freeCodeCamp Survey Form</h1>
+      <p>
+        <em>Thank you for taking the time to help us improve the platform</em>
+      </p>
+
+      <form id="mainform" action="">
+        <fieldset>
+          <label class="block line" for="fullname">
+            Name
+            <input type="text" id="fullname" name="fullname" required />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label class="block line" for="email">
+            Email
+            <input type="email" id="email" name="email" required />
+          </label>
+        </fieldset>
+        <fieldset>
+          <label class="block line" for="age">
+            Age
+            <span class="clue">(optional)</span>
+            <input type="number" id="fullname" name="fullname" />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label class="block" for="role">
+            Which option best describes your current role?
+            <select class="block line" name="role" id="role" required>
+              <option value="">Select current role</option>
+              <option value="Student">Student</option>
+              <option value="Full Time Job">Full Time Job</option>
+              <option value="Full Time Learner">Full Time Learner</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="">
+            Would you recommend freeCodeCamp to a friend?
+            <input class="inline" type="radio" checked />Definitely
+            <input class="inline" type="radio" />Maybe
+            <input class="inline" type="radio" />Not sure
+          </label>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
